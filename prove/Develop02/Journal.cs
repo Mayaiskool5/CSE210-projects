@@ -16,9 +16,9 @@ public class Journal
     public void Display()
     {
         Console.WriteLine("\n ~~~Journal Entries~~~ ");
-        foreach (JournalEntry journalEntry in _journal)
+        foreach (JournalEntry JournalEntry in _journal)
         {
-            journalEntry.Display();
+            JournalEntry.Display();
         }
         Console.WriteLine("\n~~~ End ~~~");
     }
