@@ -9,7 +9,7 @@ class Program
         Console.Write("\n**** Welcome to the Journal App ****\n");
         // Create new journal reference/list
         Journal journal = new Journal();
-        JournalPrompt jp = new JournalPrompt();
+        promptGenerator jp = new promptGenerator();
 
         while (action != 5)
         {
@@ -28,7 +28,7 @@ class Program
                     JournalEntry entry = new JournalEntry();
                     entry._entryNumber = entryId;
                     entry._dateTime = dateInfo;
-                    entry._journalPrompt = prompt;
+                    entry._promptGenerator = prompt;
 
                     Console.Write($"{prompt}\n");
                     Console.Write(">>> ");

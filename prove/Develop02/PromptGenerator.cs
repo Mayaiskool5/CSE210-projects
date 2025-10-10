@@ -1,7 +1,6 @@
 using System;
 
-// A code for Journal Prompts.
-public class JournalPrompt
+public class promptGenerator
 {
     public static string[] _prompt = {
         "Who was the most interesting person I interacted with today?",
@@ -45,9 +44,9 @@ public class JournalPrompt
             "Did you watch a movie today? If so what?",
             "Did you watch a TV show today? If so what?"
     };
-    public List<string> _journalPrompt = new List<string>(_prompt);
+    public List<string> _promptGenerator = new List<string>(_prompt);
 
-    public JournalPrompt()
+    public promptGenerator()
     {
 
     }
@@ -55,17 +54,17 @@ public class JournalPrompt
     public void Display()
     {
         var random = new Random();
-        int index = random.Next(_journalPrompt.Count);
-        string journalPrompt = _journalPrompt[index];
-        Console.WriteLine($"\n{_journalPrompt}");
+        int index = random.Next(_promptGenerator.Count);
+        string promptGenerator = _promptGenerator[index];
+        Console.WriteLine($"\n{_promptGenerator}");
     }
 
     public string GetPrompt()
     {
         var random = new Random();
-        int index = random.Next(_journalPrompt.Count);
-        string journalPrompt = _journalPrompt[index];
+        int index = random.Next(_promptGenerator.Count);
+        string promptGenerator = _promptGenerator[index];
         
-        return journalPrompt;
+        return promptGenerator;
     }
 }

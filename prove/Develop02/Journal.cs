@@ -52,7 +52,7 @@ public class Journal
         {
             foreach (JournalEntry journalEntry in _journal)
             {
-                outputFile.WriteLine($"{journalEntry._entryNumber}; {journalEntry._dateTime}; {journalEntry._journalPrompt}; {journalEntry._journalEntry}");
+                outputFile.WriteLine($"{journalEntry._entryNumber}; {journalEntry._dateTime}; {journalEntry._promptGenerator}; {journalEntry._journalEntry}");
             }
         }
     }
@@ -64,7 +64,7 @@ public class Journal
         {
             foreach (JournalEntry journalEntry in _journal)
             {
-                outputFile.WriteLine($"{journalEntry._entryNumber}; {journalEntry._dateTime}; {journalEntry._journalPrompt}; {journalEntry._journalEntry}");
+                outputFile.WriteLine($"{journalEntry._entryNumber}; {journalEntry._dateTime}; {journalEntry._promptGenerator}; {journalEntry._journalEntry}");
             }
         }
     }
@@ -88,7 +88,7 @@ public class Journal
 
                 entry._entryNumber = entries[0];
                 entry._dateTime = entries[1];
-                entry._journalPrompt = entries[2];
+                entry._promptGenerator = entries[2];
                 entry._journalEntry = entries[3];
 
                 _journal.Add(entry);
@@ -109,7 +109,7 @@ public class Journal
             {
                 ID = journalEntry._entryNumber,
                 Date = journalEntry._dateTime,
-                Prompt = journalEntry._journalPrompt,
+                Prompt = journalEntry._promptGenerator,
                 Entry = journalEntry._journalEntry
             });
         }
