@@ -37,25 +37,25 @@ class Program
 
                     journal._journal.Add(entry);
 
-                    // Console.WriteLine("Success Choice 1!");
+                    // Choice 1
                     break;
                 case 2:
                     // Display Journal Entries
                     journal.Display();
-                    // Console.WriteLine("Success Choice 2!");
+                    // Choice 2
                     break;
                 case 3:
                     // Load text file
                     journal.LoadJournalFile();
-                    // Console.WriteLine("Success Choice 3!");
+                    // Choice 3
                     break;
                 case 4:
                     // Save to text file
                     journal.CreateJournalFile();
-                    // Console.WriteLine("Success Choice 4!");
+                    // Choice 4
                     break;
                 case 5:
-                    // Quite
+                    // Quit
                     Console.WriteLine("\nThank you for using the Journal App!\n");
                     break;
                 default:
@@ -98,16 +98,15 @@ What would you like to do? ";
     }
 
     static string GetDateTime()
-    // Method to get the date and time for journal record
+    // Get the date and time for journal record
     {
         DateTime now = DateTime.Now;
         string currentDateTime = now.ToString("F");
-        // Console.WriteLine(now.ToString("F"));
         // Displays Saturday, March 01, 2008 7:00:00 AM
         return currentDateTime;
     }
     static void AddJournalEntry()
-    // Method to add entry to text file
+    // Add entry to text file
     {
         string MyJournalFile = "MyJournal.txt";
         File.AppendAllText(MyJournalFile, "");

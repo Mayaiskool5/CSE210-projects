@@ -2,6 +2,7 @@ using System;
 
 public class promptGenerator
 {
+    // Generates different prompts to enter journal entry.
     public static string[] _prompt = {
         "Who was the most interesting person I interacted with today?",
             "What was the best part of my day?",
