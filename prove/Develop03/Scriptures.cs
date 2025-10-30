@@ -4,13 +4,6 @@ using System;
 
 public class Scriptures
 {
-
-    private List<Scriptures> _tempWords = new List<Scriptures>();
-
-    private List<Scriptures> _wordIndex = new List<Scriptures>();
-
-    private string _verse;
-    
     public object Verses(string scriptureReference, List<string> list)
     {
         Console.Write($"{scriptureReference}");
@@ -28,7 +21,6 @@ public class Scriptures
     {
 
         Console.Write($"{scriptureReference}");
-        Word word = new Word();
         foreach (var item in list)
         {
             int wordLength = item.Length;

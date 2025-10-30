@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
+
 //Single word and whether it is shown or hidden.
 
 public class Word
 {
-    private int _length;
 
     public List<int> listLenght = new List<int>();
-    private List<int> _savedIndexes = new List<int>();
 
     public List<int> hiddenWords = new List<int>()
     {};
