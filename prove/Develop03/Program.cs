@@ -12,7 +12,7 @@ class Program
             Word word = new Word();
             Console.WriteLine("\n" + "Welcome to the Scripture Memorization App!");
             Console.WriteLine("Which scripture would you like to practice?:");
-            Console.WriteLine("1. Matthew 6:24");
+            Console.WriteLine("1. Matthew 28:19-20");
             Console.WriteLine("2. John 3:5");
             Console.WriteLine("3. D&C 25:12");
             int selection = Convert.ToInt32(Console.ReadLine());
@@ -21,16 +21,16 @@ class Program
             if(selection == 1)
             {
                 Console.Clear();
-                Reference reference = new Reference("Matthew", "6", "24");
+                Reference reference = new Reference("Matthew", "28", "19-20");
                 string scriptRef = reference.GetReference();
-                scripture.Verses(scriptRef, word.matC6V24List);
+                scripture.Verses(scriptRef, word.matC28V1920List);
                 Console.WriteLine("Hit enter to start or type 'quit' to exit.");
                 string input = Console.ReadLine();
 
                 bool runProgram = true;
                 do
                 {
-                    word.wordCount(word.matC6V24List); 
+                    word.wordCount(word.matC28V1920List); 
                 
                     if(input == "quit")
                     {
@@ -39,9 +39,9 @@ class Program
                     else if (input == "")
                     {
                         Console.Clear();
-                        word.wordCount(word.matC6V24List);
+                        word.wordCount(word.matC28V1920List);
                         word.pickThreeWords();
-                        scripture.HideText(scriptRef, word.matC6V24List, word.hiddenWords);
+                        scripture.HideText(scriptRef, word.matC28V1920List, word.hiddenWords);
                         input = Console.ReadLine();
                     }
                     else 
