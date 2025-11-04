@@ -8,6 +8,9 @@ class Program
     {
         for (int i = 0; i < 1; i++)
         {
+            // Here is where I inserted the exceeding the core requirements.
+            // I added the option to choose from a select amount of scriptures
+            // rather than just memorizing one chosen scripture.
             Scriptures scripture = new Scriptures();
             Word word = new Word();
             Console.WriteLine("\n" + "Welcome to the Scripture Memorization App!");
