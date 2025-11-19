@@ -4,10 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
+        // I added counters to the activities and display the log at the end of the program. (Exceeding Requirement)
         int breatheCount = 0;
         int reflectCount = 0;
         int listCount = 0;
 
+        // Program start
         Console.WriteLine("Welcome to the Mindfulness Program!");
         Console.WriteLine();
         bool running = true;

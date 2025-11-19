@@ -4,7 +4,7 @@ using System.Diagnostics;
 public class BreathingActivity : Activity
 {
 
-
+    // Breathing Activity
     public BreathingActivity() : base()
     {
         SetActivityName("Breathing Activity");
@@ -21,6 +21,7 @@ public class BreathingActivity : Activity
 
     public void DisplayInOut()
     {
+        // Timer
         int time = GetUserSessionLengthInput() * 1000;
         int intervalTime = 10000;
         int intervals = time / intervalTime;
@@ -36,7 +37,7 @@ public class BreathingActivity : Activity
             Console.WriteLine();
         }
     }
-
+    // Counting
     private void Countdown()
     {
         for (int i = 5; i > 0; i--)

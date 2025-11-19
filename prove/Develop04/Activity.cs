@@ -54,6 +54,7 @@ public class Activity
         Console.Clear();
     }
 
+    // Spinner
     public void DisplaySpinner(int numSecondsToRun)
     {
         Stopwatch stopwatch = new Stopwatch();

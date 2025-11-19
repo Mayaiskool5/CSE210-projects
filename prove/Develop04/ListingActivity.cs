@@ -6,11 +6,13 @@ public class ListingActivity : Activity
     private string _randomPrompt { get; set; }
     private List<string> _prompts;
 
+    // Listing Activity
     public ListingActivity() : base()
     {
         SetActivityName("Listing Activity");
         SetActivityDescription("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
 
+        //Prompts of good things to list
         _prompts = new List<string>
         {
             "~ Who are people that you appreciate? ~",
@@ -21,6 +23,7 @@ public class ListingActivity : Activity
         };
     }
 
+    //Run and Display the Listing Activity
     public void RunListingActivity()
     {
         RunActivityParentStart();

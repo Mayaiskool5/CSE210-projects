@@ -12,6 +12,7 @@ public class ReflectingActivity : Activity
 
         SetActivityDescription("This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
 
+        // Prompts for creating the Reflecting list.
         _prompts = new List<string>
         {
             "~ Think of a time when you stood up for someone else. ~",
@@ -20,7 +21,8 @@ public class ReflectingActivity : Activity
             "~ Think of a time when you did something truly selfless. ~"
         };
 
-        _questions = new List<string> 
+        // Questions for creating the Reflecting list.
+        _questions = new List<string>
         {
             "Why was this experience meaningful to you?",
             "Have you ever done anything like this before?",
@@ -34,6 +36,7 @@ public class ReflectingActivity : Activity
         };
     }
 
+    // Run reflecting activity
     public void RunReflectingActivity()
     {
         RunActivityParentStart();
@@ -42,6 +45,7 @@ public class ReflectingActivity : Activity
         RunActivityParentEnd();
     }
 
+    // Display the prompts
     public void DisplayPrompt()
     {
         Console.WriteLine("Consider the following: ");
@@ -56,6 +60,7 @@ public class ReflectingActivity : Activity
         Console.ReadLine();
     }    
 
+    // Display the questions
     public void DisplayQuestions()
     {
         List<int> indexes = new List<int>();
