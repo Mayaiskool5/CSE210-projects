@@ -3,7 +3,6 @@ using System.Diagnostics;
 
 public class ListingActivity : Activity
 {
-    private string _randomPrompt { get; set; }
     private List<string> _prompts;
 
     // Listing Activity
