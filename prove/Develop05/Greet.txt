@@ -1,0 +1,2 @@
+SimpleGoal||Greet||Greet people at church.||200||True
+Points||200
