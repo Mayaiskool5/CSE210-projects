@@ -3,6 +3,7 @@ using System.IO;
 
 class Menu
 {
+    // Main menu pull
     private bool _quit = false;
     private int _userchoice;
     private int _totalPoints = 0;
@@ -19,6 +20,7 @@ class Menu
     private string _filename;
     public void DisplayMenu()
     {
+        // Displaying how many points you have above the menu
         while (_quit == false) {
             Console.WriteLine($"\nYou have {_totalPoints} points");
             Console.WriteLine();
@@ -32,6 +34,7 @@ class Menu
     }
     public void Run()
     {
+        // Run goals, choose which one you would like to put in
         Console.Write("Select a choice from the menu: ");
         _userchoice = int.Parse(Console.ReadLine());
         if (_userchoice == 1)
@@ -152,6 +155,8 @@ class Menu
         Console.WriteLine(" 2. Eternal Goal");
         Console.WriteLine(" 3. Checklist Goal");
     }
+
+    // Displaying goals
     private void GoalsDisplayed()
     {
         Console.WriteLine("The goals are:");

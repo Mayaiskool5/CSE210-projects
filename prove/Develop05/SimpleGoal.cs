@@ -1,5 +1,6 @@
 class SimpleGoal : Goal
 {
+    // Completing and saving simple goal
     private bool _state;
     public SimpleGoal() : base() {}
     public SimpleGoal(string[] parts) : base(parts) {}

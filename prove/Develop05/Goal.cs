@@ -2,6 +2,7 @@ using System.Runtime.Remoting;
 
 class Goal
 {
+    // Collecting goal information
     protected string _name;
     protected string _description;
     protected int _points;
@@ -16,6 +17,7 @@ class Goal
     }
     public virtual void Setup()
     {
+        // Naming goal
         Console.Write("What is the name of your goal? ");
         _name = Console.ReadLine();
         Console.Write("What is a short description of it? ");
@@ -32,6 +34,8 @@ class Goal
     {
         _displayed = $" [X] {_name} ({_description})";
     }
+
+    // Displaying points
     public virtual int CompleteGoal()
     {
         DisplayCompleted();

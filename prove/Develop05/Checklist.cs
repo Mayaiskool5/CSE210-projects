@@ -1,5 +1,6 @@
 class Checklist : Goal
 {
+    // Compiling all the variables needed.
     private bool _state;
     private int _tracker = 0;
     private int _total;
@@ -11,6 +12,7 @@ class Checklist : Goal
     public Checklist(string[] parts) : base(parts) {}
     public override void Setup()
     {
+        // Start of bonus program
         base.Setup();
         Console.Write("How many times does this goal need to be accomplished for a bonus? ");
         _total = int.Parse(Console.ReadLine());
@@ -28,6 +30,7 @@ class Checklist : Goal
     }
     public override int CompleteGoal()
     {
+        // Point tracker
         _tracker += 1;
         if (_tracker >= _total)
         {
@@ -48,6 +51,7 @@ class Checklist : Goal
     }
     public override void DisplayCompleted()
     {
+        // Displaying goals completed
         if (_tracker >= _total)
         {
             _displayed = $" [X] {_name} ({_description}) -- Currently Completed: {_tracker}/{_total}";
