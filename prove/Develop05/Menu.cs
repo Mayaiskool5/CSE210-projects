@@ -67,7 +67,7 @@ class Menu
         }
         else if (_userchoice == 3)
         {
-            Console.Write("What is the file name you would like to choose? Enter .txt at the end");
+            Console.Write("What is the file name you would like? ");
             _filename = Console.ReadLine();
             using (StreamWriter outputFile  = new StreamWriter(_filename))
             {
@@ -79,7 +79,7 @@ class Menu
         }
         else if (_userchoice == 4)
         {
-            Console.Write("What is the file name you would like to choose? Enter .txt at the end");
+            Console.Write("What is the file name you would like to choose? Enter .txt at the end ");
             _filename = Console.ReadLine();
             string[] lines = System.IO.File.ReadAllLines(_filename);
             foreach (string line in lines)
