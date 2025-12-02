@@ -89,13 +89,13 @@ class Menu
             {
                 string[] parts = line.Split("||");
                 string type = parts[0];
-                if (type == "Simple")
+                if (type == "SimpleGoal")
                 {
                     SimpleGoal goal = new SimpleGoal(parts);
                     goal.Load(parts);
                     _goals.Add(goal);
                 }
-                else if (type == "Eternal")
+                else if (type == "EternalGoal")
                 {
                     EternalGoal goal = new EternalGoal(parts);
                     goal.Load(parts);
