@@ -30,8 +30,4 @@ class Product
         return price * quantity;
     }
 
-    public string GetProductDetails()
-    {
-        return $"Product: {name}, ID: {productId}, Price: {price:C}, Quantity: {quantity}";
-    }
 }
