@@ -6,9 +6,9 @@ class Program
     {
         List<Activity> activities = new List<Activity>();
 
-        Running running = new Running("6/3/2024", 40, "Running", 10);
-        Biking biking = new Biking("6/7/2024", 60, "Biking", 40);
-        Swimming swimming = new Swimming("6/10/2024", 30, "Swimming", 6);
+        Running running = new Running("4/3/2022", 60, "Running", 10);
+        Biking biking = new Biking("4/7/2022", 30, "Biking", 10);
+        Swimming swimming = new Swimming("4/12/2022", 30, "Swimming", 5);
 
         activities.Add(running);
         activities.Add(biking);
