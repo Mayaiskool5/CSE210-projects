@@ -1,32 +1,32 @@
 public class Lecture : Event
 {
     // Limited Capacity and a speaker
-    private int capacity;
-    private string speaker;
+    private int _capacity;
+    private string _speaker;
 
     
 
     public void SetCapacity(int capacity)
     {
-        this.capacity = capacity;
+        this._capacity = capacity;
     }
     public void SetSpeaker(string speaker)
     {
-        this.speaker = speaker;
+        this._speaker = speaker;
     }
 
     public bool IsFull()
     {
-        return numberOfAttendees >= capacity;
+        return _numberOfAttendees >= _capacity;
     }
     public string DisplayLectureDetails()
     {
         if (IsFull() == true)
         {
-            return $"Lecture by {speaker} is full. Current Attendees: {numberOfAttendees}/{capacity}.";
+            return $"Lecture by {_speaker} is full. Current Attendees: {_numberOfAttendees}/{_capacity}.";
         }
 
-        return $"Title: {title}, Speaker: {speaker}\nCurrent attendees: {numberOfAttendees}/{capacity}\nDate: {date}\nTime: {time}\nDescription: {description}\nAddress: {address}";
+        return $"Title: {_title}, Speaker: {_speaker}\nCurrent attendees: {_numberOfAttendees}/{_capacity}\nDate: {_date}\nTime: {_time}\nDescription: {_description}\nAddress: {_address}";
     }
 
 }

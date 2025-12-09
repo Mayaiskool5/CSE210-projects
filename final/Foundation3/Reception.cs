@@ -1,13 +1,13 @@
 public class Reception : Event
 {
-    private string RSVP;
+    private string _RSVP;
     public string DisplayReceptionDetails()
     {
-        return $"Title: {title}\nDate: {date}\nTime: {time}\nDescription: {description}\nAddress: {address}\nRSVP: {RSVP}/{numberOfAttendees}";
+        return $"Title: {_title}\nDate: {_date}\nTime: {_time}\nDescription: {_description}\nAddress: {_address}\nRSVP: {_RSVP}/{_numberOfAttendees}";
     }
 
     public void SetRSVP(string rsvp)
     {
-        this.RSVP = rsvp;
+        this._RSVP = rsvp;
     }
 }

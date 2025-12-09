@@ -1,14 +1,14 @@
 public class Outdoor : Event
 {
-    private string weather;
+    private string _weather;
 
     public void SetWeather(string weather)
     {
-        this.weather = weather;
+        this._weather = weather;
     }
 
     public string DisplayOutdoorDetails()
     {
-        return $"Title: {title}\nDate: {date}\nTime: {time}\nDescription: {description}\nAddress: {address}\nWeather: {weather}";
+        return $"Title: {_title}\nDate: {_date}\nTime: {_time}\nDescription: {_description}\nAddress: {_address}\nWeather: {_weather}";
     }
 }
